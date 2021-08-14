@@ -1,0 +1,295 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    padding: 0 5%;
+}
+
+#main-view {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: tomato;
+	color: #f2f2f2;
+}
+
+.main-user-dashboard {
+  width: 95%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100%;
+	overflow-x: hidden;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 8px;
+    margin: 0 auto;
+}
+
+.main-user-dashboard ol {
+    margin: 0;
+}
+
+.addition-state {
+  padding: 0rem 2rem;
+}
+
+body{
+    margin: 0px;
+    font-family: Manrope, sans-serif;
+
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #212529;
+    text-align: left;
+    background-color: #f5f8fa;
+	/* height: 100vh;
+    width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-content: center;
+		flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+
+.reg-state, .login-state {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 30px;
+  flex-direction: column;
+}
+
+.reg-state > h3, .login-state > h3 {
+  margin: 0;
+}
+
+.reg-state > h5, .login-state > h5 {
+  margin: 0;
+  font-size: 16px;
+}
+
+#reg-success {
+  color: #2dba50;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#reg-fail {
+	color: #c92c2c;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.login-page {
+  overflow-x: hidden;
+    width: 100%;
+    height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#desert {
+	position: fixed;
+  top: 60%;
+  right: 0px;
+  z-index: 1;
+  width: 70%;
+  max-width: 1440px;
+  -webkit-transform: translate(0px, -50%);
+  -ms-transform: translate(0px, -50%);
+  transform: translate(0px, -50%);
+}
+
+/**** Nav Bar CSS         */
+
+  .nav {
+    height: 50px;
+    width: 100%;
+    background-color: #4d4d4d;
+    position: relative;
+    z-index: 1000;
+    font-family: Manrope, sans-serif;
+  }
+  
+  .nav-title > a {
+      color: white;
+  }
+  .nav-title > a:hover {
+      color: #f5f5f5;
+      font-style: normal;
+  }
+  .nav > .nav-header {
+    display: inline;
+  }
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+  
+  .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 7px;
+    text-decoration: none;
+    color: #efefef;
+  }
+  
+  .nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media (max-width:600px) {
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-x: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);
+      overflow-x: auto;
+    }
+  }
+
+/****  END OF Nav Bar *** */
+
+
+
+.navbar-laravel
+{
+    box-shadow: 0 2px 4px rgba(0,0,0,.04);
+}
+
+.navbar-brand , .nav-link, .my-form, .login-form
+{
+    font-family: Manrope, sans-serif;
+}
+
+.my-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    width: 100vw;
+}
+
+.card {
+    margin-top: 10vh;
+}
+.my-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.login-form
+{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.login-form .row
+{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.add-course-result {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+
+.quick-summary {
+	margin: 0;
+	width: 100%;
+	display: flex;
+	justify-content:space-evenly;
+	align-items:center;
+}
+
+body h5 {
+  text-align: center;
+  margin: 1rem 0rem;
+}
+
+.quick-summary p {
+  margin: 0;
+}
+
+.ects, .gpa, .completed-courses {
+	width: 30%;
+  	height: 60px;
+  	border-radius: 8px;
+  	background-color: rgb(248, 248, 248);
+  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	padding: 8px;
+    margin: 1rem 0rem;
+}
